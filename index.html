@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevCore — Build Real Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" data-page="home"><span class="dot">◆</span> DevCore</a>
+    <div class="nav-links">
+      <a class="active" data-page="home">Home</a>
+      <a data-page="challenges">Challenges</a>
+      <a data-page="fundamentals">Fundamentals</a>
+      <a data-page="community">Community</a>
+      <a class="nav-cta" data-page="challenges">Start Now →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HOME ══ -->
+<div class="page active" id="home">
+<div class="col">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow fu">Open community for developers</p>
+      <h1 class="fu d1">Stop watching tutorials.<br><em>Start building real things.</em></h1>
+      <p class="fu d2">Weekly challenges, core fundamentals, and a community that ships real code — not another platform full of videos you'll never finish.</p>
+    </div>
+  </section>
+
+  <div class="promo-grid fu d3">
+    <div class="promo-card" onclick="navigateTo('challenges')">
+      <p class="promo-label">This week's challenge</p>
+      <p class="promo-title"><span class="promo-num">#08</span>Design a Key-Value Store</p>
+      <p class="promo-desc">Persistent KV store with write-ahead logging and basic ACID guarantees. Advanced — 34 submissions so far.</p>
+      <span class="promo-arr">→</span>
+    </div>
+    <div class="promo-card" onclick="navigateTo('fundamentals')">
+      <p class="promo-label">New in fundamentals</p>
+      <p class="promo-title"><span class="badge b-new" style="margin-right:6px;vertical-align:middle;">New</span>Dynamic Programming — Memoize Everything</p>
+      <p class="promo-desc">The concept most devs avoid. Learn it once, recognize it everywhere. Part of the Algorithms track.</p>
+      <span class="promo-arr">→</span>
+    </div>
+  </div>
+
+  <div class="stats-row fu d4">
+    <div class="stat-cell"><div class="stat-val">48<span>+</span></div><div class="stat-lbl">Challenges</div></div>
+    <div class="stat-cell"><div class="stat-val">4</div><div class="stat-lbl">Fundamentals tracks</div></div>
+    <div class="stat-cell"><div class="stat-val">3k<span>+</span></div><div class="stat-lbl">Members</div></div>
+    <div class="stat-cell"><div class="stat-val">1<span>/wk</span></div><div class="stat-lbl">New challenge</div></div>
+  </div>
+
+  <div class="home-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Latest Challenges</h2>
+        <a class="see-all" data-page="challenges">View all →</a>
+      </div>
+      <div class="cc-grid">
+        <div class="cc" onclick="navigateTo('challenges')">
+          <div class="cc-top"><span class="badge b-beg">Beginner</span></div>
+          <div class="cc-title">Reverse a String Without Built-ins</div>
+          <div class="cc-desc">No split(), reverse(), or join(). Implement the reversal manually using only loops and basic operators.</div>
+          <div class="cc-foot"><span class="cc-sub">142 submissions</span><span class="chip">Strings</span></div>
+        </div>
+        <div class="cc" onclick="navigateTo('challenges')">
+          <div class="cc-top"><span class="badge b-int">Intermediate</span></div>
+          <div class="cc-title">Build a Rate Limiter</div>
+          <div class="cc-desc">Token bucket algorithm. Must handle burst traffic and sliding windows correctly.</div>
+          <div class="cc-foot"><span class="cc-sub">87 submissions</span><span class="chip">System Design</span></div>
+        </div>
+        <div class="cc" onclick="navigateTo('challenges')">
+          <div class="cc-top"><span class="badge b-adv">Advanced</span></div>
+          <div class="cc-title">Design a Key-Value Store</div>
+          <div class="cc-desc">Persistent KV store with write-ahead logging and basic ACID guarantees.</div>
+          <div class="cc-foot"><span class="cc-sub">34 submissions</span><span class="chip">Databases</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Fundamentals</h2>
+        <a class="see-all" data-page="fundamentals">View all →</a>
+      </div>
+      <div class="fc-grid">
+        <div class="fc" onclick="navigateTo('fundamentals')">
+          <span class="fc-icon">⬡</span>
+          <div class="fc-title">Data Structures</div>
+          <div class="fc-desc">Arrays, linked lists, trees, graphs and hash maps. The building blocks of every algorithm.</div>
+          <span class="fc-count">12 lessons</span>
+        </div>
+        <div class="fc" onclick="navigateTo('fundamentals')">
+          <span class="fc-icon">⟳</span>
+          <div class="fc-title">Algorithms</div>
+          <div class="fc-desc">Sorting, searching, recursion, dynamic programming. Learn to think algorithmically.</div>
+          <span class="fc-count">18 lessons</span>
+        </div>
+        <div class="fc" onclick="navigateTo('fundamentals')">
+          <span class="fc-icon">◈</span>
+          <div class="fc-title">System Design</div>
+          <div class="fc-desc">How to design scalable, reliable systems from scratch.</div>
+          <span class="fc-count">10 lessons</span>
+        </div>
+        <div class="fc" onclick="navigateTo('fundamentals')">
+          <span class="fc-icon">▲</span>
+          <div class="fc-title">Clean Code</div>
+          <div class="fc-desc">Naming, functions, comments — habits that separate good devs from great ones.</div>
+          <span class="fc-count">8 lessons</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <div class="about-grid">
+      <div>
+        <div class="about-ttl">Why DevCore exists</div>
+        <p class="about-txt">Most developers get stuck in tutorial hell — watching videos, copying code, never really building anything on their own. DevCore exists to break that cycle.</p>
+        <p class="about-txt">Every week a new challenge drops. You solve it, share your solution, and learn from how others approached the same problem. No lectures. No theory for theory's sake. Just real problems and real code.</p>
+        <p class="about-txt">Created by <a class="about-lnk" href="#">@carlossucredev</a> — fullstack developer, building in public.</p>
+      </div>
+      <div class="nl-box">
+        <div class="nl-title">Weekly challenge in your inbox</div>
+        <p class="nl-desc">Get the new challenge every Monday. No spam, no fluff — just the challenge and context.</p>
+        <div class="nl-row">
+          <input class="nl-input" type="email" placeholder="your@email.com"/>
+          <button class="btn btn-y" onclick="subscribe(this)">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <div class="cta-inner">
+      <div>
+        <div class="cta-ttl">Ready to stop watching and start building?</div>
+        <div class="cta-sub">Pick your first challenge. It doesn't matter which level. Just start.</div>
+      </div>
+      <button class="btn btn-k" onclick="navigateTo('challenges')">Browse Challenges →</button>
+    </div>
+  </div>
+
+  <footer><div class="foot-inner">
+    <div class="foot-logo">Dev<span>Core</span></div>
+    <div class="foot-by">Built by @carlossucredev</div>
+    <div class="foot-lnks">
+      <a href="https://youtube.com/@carlossucredev" target="_blank">YouTube</a>
+      <a href="https://github.com/carlossucredev" target="_blank">GitHub</a>
+      <a href="https://twitter.com/carlossucredev" target="_blank">Twitter</a>
+    </div>
+  </div></footer>
+</div><!-- /col -->
+</div><!-- /home -->
+
+<!-- ══ CHALLENGES ══ -->
+<div class="page" id="challenges">
+<div class="col">
+  <div class="page-hd">
+    <div class="wrap">
+      <p class="eyebrow">48 challenges available</p>
+      <h1>Challenges</h1>
+      <p>One new challenge every week. Share your solution, learn from others. All levels welcome.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <button class="fbtn active" onclick="setFilter(this)">All</button>
+      <button class="fbtn" onclick="setFilter(this)">Beginner</button>
+      <button class="fbtn" onclick="setFilter(this)">Intermediate</button>
+      <button class="fbtn" onclick="setFilter(this)">Advanced</button>
+      <button class="fbtn" onclick="setFilter(this)">Strings</button>
+      <button class="fbtn" onclick="setFilter(this)">Algorithms</button>
+      <button class="fbtn" onclick="setFilter(this)">System Design</button>
+      <button class="fbtn" onclick="setFilter(this)">Databases</button>
+      <button class="fbtn" onclick="setFilter(this)">API</button>
+    </div>
+  </div>
+  <div class="c-list">
+    <div class="c-row" onclick="openChallenge('c1')">
+      <div class="c-num">01</div>
+      <div><div class="c-title">Reverse a String Without Built-ins</div><div class="c-tags"><span class="badge b-beg">Beginner</span><span class="chip">Strings</span><span class="chip">Loops</span></div></div>
+      <div class="c-sub">142 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c2')">
+      <div class="c-num">02</div>
+      <div><div class="c-title">FizzBuzz — But Make It Extensible</div><div class="c-tags"><span class="badge b-beg">Beginner</span><span class="chip">OOP</span><span class="chip">Design Patterns</span></div></div>
+      <div class="c-sub">210 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c3')">
+      <div class="c-num">03</div>
+      <div><div class="c-title">Implement a Stack with Min() in O(1)</div><div class="c-tags"><span class="badge b-int">Intermediate</span><span class="chip">Data Structures</span><span class="chip">Stacks</span></div></div>
+      <div class="c-sub">98 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c4')">
+      <div class="c-num">04</div>
+      <div><div class="c-title">Build a Rate Limiter</div><div class="c-tags"><span class="badge b-int">Intermediate</span><span class="chip">System Design</span><span class="chip">Concurrency</span></div></div>
+      <div class="c-sub">87 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c5')">
+      <div class="c-num">05</div>
+      <div><div class="c-title">Build a REST API with Auth from Scratch</div><div class="c-tags"><span class="badge b-int">Intermediate</span><span class="chip">API</span><span class="chip">JWT</span><span class="chip">Backend</span></div></div>
+      <div class="c-sub">76 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c6')">
+      <div class="c-num">06</div>
+      <div><div class="c-title">LRU Cache Implementation</div><div class="c-tags"><span class="badge b-adv">Advanced</span><span class="chip">Data Structures</span><span class="chip">HashMap</span></div></div>
+      <div class="c-sub">52 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c7')">
+      <div class="c-num">07</div>
+      <div><div class="c-title">Design a URL Shortener</div><div class="c-tags"><span class="badge b-adv">Advanced</span><span class="chip">System Design</span><span class="chip">Databases</span></div></div>
+      <div class="c-sub">41 submissions</div>
+    </div>
+    <div class="c-row" onclick="openChallenge('c8')">
+      <div class="c-num">08</div>
+      <div><div class="c-title">Design a Key-Value Store</div><div class="c-tags"><span class="badge b-adv">Advanced</span><span class="chip">Databases</span><span class="chip">Storage</span></div></div>
+      <div class="c-sub">34 submissions</div>
+    </div>
+  </div>
+  <footer><div class="foot-inner">
+    <div class="foot-logo">Dev<span>Core</span></div>
+    <div class="foot-by">Built by @carlossucredev</div>
+    <div class="foot-lnks"><a href="https://youtube.com/@carlossucredev" target="_blank">YouTube</a><a href="https://github.com/carlossucredev" target="_blank">GitHub</a><a href="https://twitter.com/carlossucredev" target="_blank">Twitter</a></div>
+  </div></footer>
+</div><!-- /col -->
+</div><!-- /challenges -->
+
+<!-- ══ FUNDAMENTALS ══ -->
+<div class="page" id="fundamentals">
+<div class="col">
+  <div class="page-hd">
+    <div class="wrap">
+      <p class="eyebrow">Core knowledge</p>
+      <h1>Fundamentals</h1>
+      <p>The concepts that never go out of style. Master these and every framework, language, and tool becomes easier to learn.</p>
+    </div>
+  </div>
+  <div class="fund-wrap">
+    <div class="track">
+      <div class="track-hd"><span class="t-icon">⬡</span><span class="t-name">Data Structures</span><span class="t-count">12 lessons</span></div>
+      <div class="l-row" onclick="openLesson('ds1')"><span class="l-num">01</span><span class="l-name">Arrays — More Than Just a List</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('ds2')"><span class="l-num">02</span><span class="l-name">Linked Lists — When Arrays Fall Short</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('ds3')"><span class="l-num">03</span><span class="l-name">Stacks and Queues — Order Matters</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('ds4')"><span class="l-num">04</span><span class="l-name">Hash Maps — O(1) or Bust</span><span class="badge b-new">New</span></div>
+      <div class="l-row" onclick="openLesson('ds5')"><span class="l-num">05</span><span class="l-name">Binary Trees — From Root to Leaf</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('ds6')"><span class="l-num">06</span><span class="l-name">Graphs — When Trees Aren't Enough</span><span class="badge b-free">Free</span></div>
+    </div>
+    <div class="track">
+      <div class="track-hd"><span class="t-icon">⟳</span><span class="t-name">Algorithms</span><span class="t-count">18 lessons</span></div>
+      <div class="l-row" onclick="openLesson('al1')"><span class="l-num">01</span><span class="l-name">Big O Notation — Stop Guessing Performance</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('al2')"><span class="l-num">02</span><span class="l-name">Binary Search — Think in Halves</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('al3')"><span class="l-num">03</span><span class="l-name">Recursion — When a Function Calls Itself</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('al4')"><span class="l-num">04</span><span class="l-name">Sorting — Why It Still Matters</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('al5')"><span class="l-num">05</span><span class="l-name">Dynamic Programming — Memoize Everything</span><span class="badge b-new">New</span></div>
+      <div class="l-row" onclick="openLesson('al6')"><span class="l-num">06</span><span class="l-name">Greedy Algorithms — Local Wins, Global Wins</span><span class="badge b-free">Free</span></div>
+    </div>
+    <div class="track">
+      <div class="track-hd"><span class="t-icon">◈</span><span class="t-name">System Design</span><span class="t-count">10 lessons</span></div>
+      <div class="l-row" onclick="openLesson('sd1')"><span class="l-num">01</span><span class="l-name">How to Approach Any System Design Question</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('sd2')"><span class="l-num">02</span><span class="l-name">Scalability — Vertical vs Horizontal</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('sd3')"><span class="l-num">03</span><span class="l-name">Caching — The Art of Not Doing Work Twice</span><span class="badge b-new">New</span></div>
+      <div class="l-row" onclick="openLesson('sd4')"><span class="l-num">04</span><span class="l-name">Load Balancing — Spreading the Work</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('sd5')"><span class="l-num">05</span><span class="l-name">Databases — SQL vs NoSQL, When and Why</span><span class="badge b-free">Free</span></div>
+    </div>
+    <div class="track">
+      <div class="track-hd"><span class="t-icon">▲</span><span class="t-name">Clean Code</span><span class="t-count">8 lessons</span></div>
+      <div class="l-row" onclick="openLesson('cc1')"><span class="l-num">01</span><span class="l-name">Naming Things — The Hardest Part of Programming</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('cc2')"><span class="l-num">02</span><span class="l-name">Functions — Do One Thing, Do It Well</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('cc3')"><span class="l-num">03</span><span class="l-name">Comments — When to Write Them, When to Delete</span><span class="badge b-free">Free</span></div>
+      <div class="l-row" onclick="openLesson('cc4')"><span class="l-num">04</span><span class="l-name">Refactoring — Improving Code Without Breaking It</span><span class="badge b-new">New</span></div>
+    </div>
+  </div>
+  <footer><div class="foot-inner">
+    <div class="foot-logo">Dev<span>Core</span></div>
+    <div class="foot-by">Built by @carlossucredev</div>
+    <div class="foot-lnks"><a href="https://youtube.com/@carlossucredev" target="_blank">YouTube</a><a href="https://github.com/carlossucredev" target="_blank">GitHub</a><a href="https://twitter.com/carlossucredev" target="_blank">Twitter</a></div>
+  </div></footer>
+</div><!-- /col -->
+</div><!-- /fundamentals -->
+
+<!-- ══ COMMUNITY ══ -->
+<div class="page" id="community">
+<div class="col">
+  <div class="page-hd">
+    <div class="wrap">
+      <p class="eyebrow">3,000+ developers</p>
+      <h1>Community</h1>
+      <p>Share your solutions, learn from others, build in public. Drop your GitHub link and get real feedback.</p>
+    </div>
+  </div>
+  <div class="comm-layout">
+    <div class="feed">
+      <div class="feed-post">
+        <div class="p-hdr"><div class="p-av">MR</div><div><div class="p-name">@marcosr_dev</div><div class="p-time">2 hours ago</div></div></div>
+        <span class="p-ref">Challenge #04 — Rate Limiter</span>
+        <p class="p-body">Solved this using a sliding window approach in Java. The trick was using a Deque to track timestamps efficiently. Here's the core logic:</p>
+        <div class="p-code"><span class="kw">public boolean</span> <span class="fn">allowRequest</span>(<span class="kw">long</span> timestamp) {
+  <span class="cm">// remove requests outside the window</span>
+  <span class="kw">while</span> (!window.isEmpty() &&
+    timestamp - window.peek() >= windowSize) {
+    window.poll();
+  }
+  <span class="kw">if</span> (window.size() < maxRequests) {
+    window.offer(timestamp);
+    <span class="kw">return true</span>;
+  }
+  <span class="kw">return false</span>;
+}</div>
+        <div class="p-acts">
+          <button class="p-act" onclick="like(this)">♡ 24</button>
+          <button class="p-act">◎ 8 replies</button>
+          <button class="p-act">↗ GitHub</button>
+        </div>
+      </div>
+      <div class="feed-post">
+        <div class="p-hdr"><div class="p-av">AN</div><div><div class="p-name">@ana_builds</div><div class="p-time">5 hours ago</div></div></div>
+        <span class="p-ref">Challenge #01 — Reverse String</span>
+        <p class="p-body">First challenge done! Solved it in Python without any built-ins. Felt simple but it made me think about pointer manipulation in a way I usually skip with modern methods.</p>
+        <div class="p-acts">
+          <button class="p-act" onclick="like(this)">♡ 17</button>
+          <button class="p-act">◎ 5 replies</button>
+          <button class="p-act">↗ GitHub</button>
+        </div>
+      </div>
+      <div class="feed-post">
+        <div class="p-hdr"><div class="p-av">DL</div><div><div class="p-name">@devleo</div><div class="p-time">Yesterday</div></div></div>
+        <span class="p-ref">Challenge #06 — LRU Cache</span>
+        <p class="p-body">This one took me 3 days but I finally got it. Combining a HashMap with a doubly linked list — O(1) for both get and put. Best data structures problem I've done so far.</p>
+        <div class="p-acts">
+          <button class="p-act" onclick="like(this)">♡ 41</button>
+          <button class="p-act">◎ 14 replies</button>
+          <button class="p-act">↗ GitHub</button>
+        </div>
+      </div>
+      <div class="feed-post">
+        <div class="p-hdr"><div class="p-av">CS</div><div><div class="p-name">@carlossucredev</div><div class="p-time">2 days ago</div></div></div>
+        <p class="p-body">🔥 Challenge #08 is live — Design a Key-Value Store. Think about write-ahead logging, compaction, and what it means to have durability without a traditional database. Drop your solution below.</p>
+        <div class="p-acts">
+          <button class="p-act" onclick="like(this)">♡ 89</button>
+          <button class="p-act">◎ 31 replies</button>
+          <button class="p-act">↗ YouTube</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="widget">
+        <div class="w-title">Leaderboard</div>
+        <div class="lb-row"><span class="lb-rank gold">1</span><span class="lb-name">@devleo</span><span class="lb-pts">1,240 pts</span></div>
+        <div class="lb-row"><span class="lb-rank silver">2</span><span class="lb-name">@marcosr_dev</span><span class="lb-pts">980 pts</span></div>
+        <div class="lb-row"><span class="lb-rank bronze">3</span><span class="lb-name">@ana_builds</span><span class="lb-pts">760 pts</span></div>
+        <div class="lb-row"><span class="lb-rank">4</span><span class="lb-name">@jrdev_br</span><span class="lb-pts">540 pts</span></div>
+        <div class="lb-row"><span class="lb-rank">5</span><span class="lb-name">@techvidal</span><span class="lb-pts">490 pts</span></div>
+      </div>
+      <div class="widget">
+        <div class="w-title">Active Challenges</div>
+        <div class="ac-row"><div class="ac-ttl">Design a Key-Value Store</div><div class="ac-meta">Advanced · 34 submissions · 5 days left</div></div>
+        <div class="ac-row"><div class="ac-ttl">Build a Rate Limiter</div><div class="ac-meta">Intermediate · 87 submissions · Closed</div></div>
+        <div class="ac-row"><div class="ac-ttl">Reverse a String Without Built-ins</div><div class="ac-meta">Beginner · 142 submissions · Closed</div></div>
+      </div>
+      <div class="widget">
+        <div class="w-title">Join the Discord</div>
+        <p style="font-size:.79rem;color:var(--muted);line-height:1.7;margin-bottom:12px;">Real-time feedback, pair programming, and early access to new challenges.</p>
+        <a class="btn btn-y" href="#" style="width:100%;text-align:center;display:block;font-size:.78rem;">Join Discord →</a>
+      </div>
+    </div>
+  </div>
+  <footer><div class="foot-inner">
+    <div class="foot-logo">Dev<span>Core</span></div>
+    <div class="foot-by">Built by @carlossucredev</div>
+    <div class="foot-lnks"><a href="https://youtube.com/@carlossucredev" target="_blank">YouTube</a><a href="https://github.com/carlossucredev" target="_blank">GitHub</a><a href="https://twitter.com/carlossucredev" target="_blank">Twitter</a></div>
+  </div></footer>
+</div><!-- /col -->
+</div><!-- /community -->
+<div class="modal-overlay" id="overlay" onclick="overlayClick(event)">
+  <div class="modal">
+    <div class="m-head">
+      <div>
+        <div class="m-num" id="m-num">Challenge #01</div>
+        <div class="m-ttl" id="m-ttl">—</div>
+        <div class="m-meta" id="m-meta"></div>
+      </div>
+      <button class="m-close" onclick="closeModal()">✕ Close</button>
+    </div>
+    <div class="m-body" id="m-body"></div>
+    <div class="m-foot" id="m-foot"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
