@@ -1,4 +1,4 @@
-# ◆ DevCore
+## ◆ DevCore
 
 > Stop watching tutorials. Start building real things.
 
